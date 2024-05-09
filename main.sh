@@ -36,8 +36,6 @@ function bot(){
         Username👤: $username
 Ip🌐: ${ip}
 Domain🌐: ${domain}
-Username👤: vps
-Password🔒: vps
      "
     curl -s -X POST "https://api.telegram.org/bot$bot_token/sendMessage" \
         -d "chat_id=$chat_id" \
@@ -73,7 +71,7 @@ function set_timezone(){
     clear 
     sleep 2
     echo -e "${PURPLE}🚀Setting Timezone..${mwisho}"
-    timedatectl set-timezone Africa/Dar_es_Salaam 
+    timedatectl set-timezone Asia/Jakarta 
 }
 
 generate_random_string() {
@@ -176,7 +174,7 @@ function check_domain(){
         echo -e "${kubali}Good!${mwisho}🚀Domain Verified Successfuly!"
         echo "$domain" > /etc/domain
         export domain=$domain
-        bot
+        #bot
         sleep 2
         clear
     fi    
