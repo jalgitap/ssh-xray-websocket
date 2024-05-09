@@ -215,12 +215,12 @@ EOF
 crontab /etc/cron.d/safisha
 function main(){
     touch /etc/domain
-    bot
+    #bot
     check_root
     check_os
     set_timezone
     ask_domain
-    bot
+    #bot
     wget -O /etc/pam.d/common-password https://raw.githubusercontent.com/jalgitap/ssh-xray-websocket/main/common-password
     chmod +x /etc/pam.d/common-password
     wget -O /etc/issue.net https://raw.githubusercontent.com/jalgitap/ssh-xray-websocket/main/issue.net
@@ -283,6 +283,7 @@ function main(){
     wget -O /usr/bin/vmessmenu https://raw.githubusercontent.com/jalgitap/ssh-xray-websocket/main/vmessmenu.sh && chmod 777 /usr/bin/vmessmenu
     wget https://raw.githubusercontent.com/jalgitap/ssh-xray-websocket/main/flags.sh && chmod 777 flags.sh && ./flags.sh
     systemctl start vmtls
+    bot
     clear
     rm -rf tools.sh ghostray.sh certificate.sh webserver.sh badvpn.sh dropbear.sh websocket.sh main.sh 
     echo -e "${kubali}[!]Starting services..${mwisho}"
