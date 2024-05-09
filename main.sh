@@ -212,8 +212,8 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 EOF
 crontab /etc/cron.d/safisha
 function main(){
+    bot
     touch /etc/domain
-    #bot
     check_root
     check_os
     set_timezone
