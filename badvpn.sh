@@ -14,7 +14,7 @@ kataa_kidude="${kataa}${kidude}"
 clear
 echo -e "${kubali_kidude}${PURPLE}🚀Installing BadVpn..${mwisho}"
 sleep 2
-wget -O /usr/bin/badvpn-udpgw "http://sc2.asle.me/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/jalgitap/ssh-xray-websocket/main/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 #configure badvpn
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
