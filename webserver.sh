@@ -22,7 +22,7 @@ rm /etc/nginx/sites-available/default
 
 rm -rf /etc/nginx/nginx.conf
 
-wget -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/jalgitap/ssh-xray-websocket/main/nginx.conf
+wget -O /etc/nginx/nginx.conf https://sc2.asle.me/nginx.conf
 ##our configuration                                      
 cat <<'EOF' > /etc/nginx/conf.d/server.conf
     server {

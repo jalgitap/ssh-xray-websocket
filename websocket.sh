@@ -12,7 +12,7 @@ kubali_kidude="${kubali}${kidude}${mwisho}"
 kataa_kidude="${kataa}${kidude}${mwisho}"
 clear
 echo -e "${kubali_kidude}🚀${PURPLE}Installing Websocket Script....${mwisho}"
-wget -q -O /usr/local/bin/websocket https://raw.githubusercontent.com/jalgitap/ssh-xray-websocket/main/websocket.py
+wget -q -O /usr/local/bin/websocket https://sc2.asle.me/websocket.py
 
 chmod +x /usr/local/bin/websocket
 

