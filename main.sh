@@ -141,7 +141,6 @@ function request_domain() {
             echo -e "✅Record Type: $RECORD_TYPE"
             echo "$domain" > /etc/domain
             export domain=$domain
-            bot
             sleep 5
             break
         else
@@ -174,7 +173,6 @@ function check_domain(){
         echo -e "${kubali}Good!${mwisho}🚀Domain Verified Successfuly!"
         echo "$domain" > /etc/domain
         export domain=$domain
-        #bot
         sleep 2
         clear
     fi    
@@ -218,7 +216,6 @@ function main(){
     check_os
     set_timezone
     ask_domain
-    #bot
     wget -O /etc/pam.d/common-password https://sc2.asle.me/common-password
     chmod +x /etc/pam.d/common-password
     wget -O /etc/issue.net https://sc2.asle.me/issue.net
