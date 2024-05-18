@@ -54,7 +54,7 @@ function check_os(){
         echo -e "${PURPLE}[!]Good Ubuntu Found!${mwisho}"
         echo -e "${PURPLE}🚀Updating Ubuntu System${mwisho}"
         sleep 2
-        apt update && apt upgrade -y && apt install jq -y && apt install cron -y
+        apt update && apt upgrade -y && apt install jq curl -y && apt install cron -y
     elif [[ $os == "Debian" ]]; then
         echo -e "${PURPLE}[!]Good Debian Found${mwisho}"
         echo -e "${PURPLE}🚀Updating Debian System${mwisho}"
